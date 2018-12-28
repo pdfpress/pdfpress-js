@@ -6,7 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "nyc mocha lib/**/*.ts"
+    "test": "nyc mocha lib/**/*.ts",
+    "report": "nyc -r text -r lcov report"
   },
   "repository": {
     "type": "git",
